@@ -30,13 +30,13 @@
 #home{
     width:100%;
     height:700px;
+    padding-left: 6%;
     background-image: url('../img/homebg.jpg');
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
 }
 #home-detail{
-    margin-left:10%;
     margin-top:20%;
     justify-content: end;
     color:white;
@@ -56,10 +56,7 @@ button{
 button:hover{
     background-color: aliceblue;
 }
-.homebtn{
-    margin-left:10%;
 
-}
 #about-me{
     border-color: black;
 
