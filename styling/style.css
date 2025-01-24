@@ -11,7 +11,7 @@
 /*Header Section*/
 #nav-section{
     right:10%;
-    position:fixed;
+   /* position:fixed;*/
     width:90%;
     
 }
@@ -41,11 +41,15 @@
     justify-content: end;
     color:white;
 }
+#home-detail p{
+    width:25%;
+    margin-top:3%;
+}
 button{
     background-color: transparent;
     color:white;
     padding:5px 2px 5px 2px;
-    margin-top:5%;
+    margin-top:1%;
     border-radius: 12px;
     width:150px;
     height:50px;
@@ -56,11 +60,75 @@ button{
 button:hover{
     background-color: aliceblue;
 }
-
+#about{
+    display:flex;
+    flex-direction:column;
+}
 #about-me{
     border-color: black;
 
 }
-#about-me h1{
-    padding-bottom: 5px;
+
+.centered-text{
+    text-align: center;
+    margin-top:5%;
+}
+.underline{
+    border-top: 5px solid black; 
+    width:5%;
+    margin:1%;
+    
+}
+.centered{
+    display:flex;
+    justify-content: center;
+}
+.about-col{
+    width:30%;
+    float:left;
+    margin-right:2%;
+    height:500px;
+}
+#about .about-col{
+    align-items: center;
+}
+#first-about-col{
+    margin-left:2%;
+}
+.row{
+    display:block;
+    float:left;
+    margin-top:10%;
+}
+/*progress bars*/
+.progress-wrapper {
+    gap: 20px;
+}
+.progress-container{
+     
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height:5px;
+
+}
+.progress-bar{
+    width:0%;
+    text-align:center;
+    color:white;
+    border-radius:5px 0 0 5px;
+    transition: width 2s ease-out;
+}
+.progress-title{
+text-align:left;
+margin-bottom:10px;
+}
+@media screen and (max-width: 768px) {
+    .progress-wrapper {
+        display: block; /* Stack vertically */
+        margin: 0;
+    }
+    .progress-title {
+        width: 100%;
+    }
 }
