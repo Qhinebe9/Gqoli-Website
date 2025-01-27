@@ -25,6 +25,12 @@
     
 
 }
+section{
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
 
 /*Home section*/
 #home{
@@ -32,9 +38,6 @@
     height:700px;
     padding-left: 6%;
     background-image: url('../img/homebg.jpg');
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
 }
 #home-detail{
     margin-top:20%;
@@ -109,7 +112,7 @@ button:hover{
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
-    height:5px;
+    height:15px;
 
 }
 .progress-bar{
@@ -121,7 +124,7 @@ button:hover{
 }
 .progress-title{
 text-align:left;
-margin-bottom:10px;
+margin-bottom:20px;
 }
 @media screen and (max-width: 768px) {
     .progress-wrapper {
@@ -131,4 +134,31 @@ margin-bottom:10px;
     .progress-title {
         width: 100%;
     }
+}
+/*Services section*/
+
+.services-col{
+    width:25%;
+    float:left;
+    margin-right:5%;
+    height:200px;
+    padding:2%;
+    border-style: ridge;
+    border-radius:5px;
+}
+#services .services-col{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+
+#first-service-col{
+    margin-left:5%;
+}
+.icon2 i{
+    font-size:30px;
+    margin-bottom:10px;
+}
+.services-col h2{
+    margin-bottom:5px;
 }

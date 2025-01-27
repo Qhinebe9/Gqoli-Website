@@ -5,19 +5,10 @@
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <title> Lunga Gqoli</title>
         <link rel ="stylesheet" href="styling/style.css">
-        <script>
-            // to handle progress bar animation
-    function animateProgressBar(progressBarId, targetValue) {
-        const progressBarElement = document.getElementById(progressBarId);
-        progressBarElement.style.width = `${targetValue}%`;  // Animate to target value
-        progressBarElement.setAttribute('aria-valuenow', targetValue);  // Update aria value
-        progressBarElement.textContent = `${targetValue}%`;  // Update text content
-    }
-    
-        </script>
+        <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        
     </head>
     <body>
-        
             <section id="home">
                 <div id="container">
                     <div id="nav-section">
@@ -46,56 +37,80 @@
                     <div class="underline centered "></div>
                 </div>
                 <div class="row">
+                    <!--First Col in the row-->
                     <div id="first-about-col" class="about-col centered-text" style="margin-top: 0%;">
                         <h2 >Certified CA(SA)</h2>
                         <br>
-                        <p>I completed my undergraduate degree at UFS, where I built a strong foundation in accounting, financial management, taxation, and business law. This program gave me the skills and knowledge I needed to start my career in accounting. During my time at UFS, I also participated in student organizations, which helped me develop both academically and as a leader.</p>
+                        <p>I completed my undergraduate degree at the University of the Free State (UFS), where I gained a comprehensive and solid foundation in several key areas of accounting and business. The program provided in-depth knowledge in accounting principles, financial management, taxation, and business law, all of which equipped me with the technical skills needed to excel in the field of accounting.
+
+                            Beyond the academic curriculum, I also had the opportunity to engage in various student organizations, which were instrumental in my personal and professional development. These extracurricular activities allowed me to build leadership skills, work in teams, and enhance my communication abilities. By balancing academics with active participation in student organizations, I was able to cultivate a well-rounded set of skills that extended beyond the classroom and prepared me for the dynamic demands of the professional world.
+                            
+                            Overall, my time at UFS not only provided me with the academic knowledge required for a successful career in accounting but also helped me grow as an individual and a leader, both of which have been invaluable in my career trajectory.
+                        </p>
                     </div>
+                    <!--Second Col in the row-->
                     <div  class="about-col" style="background-image: url('./img/headshot.jpg'); background-size:cover; background-position:center; background-repeat: no-repeat;">
                     </div>
+                    <!--Third Col in the row-->
                     <div class="progress-wrapper about-col">
                         <div class="progress-title">Excel
-                        <div class="progress-container">
-                            <div class="progress-bar" id="progressBar1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#2c98f0"></div>
-                        </div>
-                        70%
+                            <div class="progress-container">
+                                <div class="progress-bar" id="progressBar1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#2c98f0"></div>
+                            </div>
                         </div>
                 
                         <!-- Progress Bar 2 -->
-                        <div class="progress-title">Excel2
-                        <div class="progress-container">
-                            <div class="progress-bar" id="progressBar2" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#ec5453"></div>
-                        </div>
-                        60%
+                        <div class="progress-title">Taxation
+                            <div class="progress-container">
+                                <div class="progress-bar" id="progressBar2" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#ec5453"></div>
+                            </div>
                         </div>
                 
                         <!-- Progress Bar 3 -->
-                        <div class="progress-title">Excel3
-                        <div class="progress-container">
-                            <div class="progress-bar" id="progressBar3" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#f9bf3f"></div>
-                        </div>
-                        60%
+                        <div class="progress-title">auditing
+                            <div class="progress-container">
+                                <div class="progress-bar" id="progressBar3" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#f9bf3f"></div>
+                            </div>
                         </div>
                 
                         <!-- Progress Bar 4 -->
                         <div class="progress-title">SQL
-                        <div class="progress-container">
-                            <div class="progress-bar" id="progressBar4" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#a84cb8"></div>
+                            <div class="progress-container">
+                                <div class="progress-bar" id="progressBar4" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#a84cb8"></div>
+                            </div>
                         </div>
-                        80%
-                        </div>
-                </div>
-
-                
-                
-                
+                    </div>
+                </div> 
             </section>
-        </div>
+            <section id="services" style="background-color: beige;">
+                <h1 class="centered-text">Services</h1>
+                <div class="centered">
+                    <div class="underline centered "></div>
+                </div>
+                <div class="row">
+                    <!--First Col in the row-->
+                    <div id="first-service-col" class="services-col centered">
+                        <span class="icon2"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <h2>Bookkeeping</h2>
+                        <p>Preparation of financial statements, including balance sheets, income statements, and cash flow statements.</p>
+                    </div>
+                    <!--Second Col in the row-->
+                    <div  class="services-col centered">
+                        <span class="icon2"><i class="fa fa-calculator" aria-hidden="true"></i></span>
+                        <h2>Tax Consulting</h2>
+                        <p>Preparing and filing personal and business tax returns.</p>
+                    </div>
+                    <!--Third Col in the row-->
+                    <div class="services-col centered">
+                    </div>
+                </div> 
+            </section>
         
 
     
         
 
+        <script src="js/main.js"></script>
     </body>
     
 </html>
