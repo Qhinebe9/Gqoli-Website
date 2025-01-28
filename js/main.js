@@ -1,4 +1,4 @@
-       // to handle progress bar animation
+// to handle progress bar animation
        function animateProgressBar(progressBarId, targetValue) {
         const progressBarElement = document.getElementById(progressBarId);
         progressBarElement.style.width = `${targetValue}%`;  // Animate to target value
@@ -39,5 +39,17 @@ window.addEventListener('scroll', function() {
 			animateProgressBar(progressBar.id, targetValue);
 			progressBar.classList.add('animated');  // Prevent animation from running again
 		}
+	});
+});
+
+//handling navigation link clicks to trigger the fade-in effect
+const navl= document.querySelectorAll('#nav-section a');
+navl.forEach(link=>{
+	link.addEventListener('click',function(e){
+		e.preventDefault();
+		const targetSectionId =e.target.getAttribute('href').substring(1);
+		document.getElementById(targetSectionId).scrollIntoView({
+			behavior: 'smooth'
+		});
 	});
 });
