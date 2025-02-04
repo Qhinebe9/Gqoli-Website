@@ -22,13 +22,13 @@ window.addEventListener('scroll', function() {
 			// Assign target values
 			let targetValue;
 			if (progressBar.id === 'progressBar1') {
-				targetValue = 70;
-			} else if (progressBar.id === 'progressBar2') {
-				targetValue = 60;
-			} else if (progressBar.id === 'progressBar3') {
-				targetValue = 60;
-			} else if (progressBar.id === 'progressBar4') {
 				targetValue = 80;
+			} else if (progressBar.id === 'progressBar2') {
+				targetValue = 75;
+			} else if (progressBar.id === 'progressBar3') {
+				targetValue = 70;
+			} else if (progressBar.id === 'progressBar4') {
+				targetValue = 75;
 			} else if (progressBar.id === 'progressBar5') {
 				targetValue = 60;
 			} else if (progressBar.id === 'progressBar6') {

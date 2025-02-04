@@ -197,3 +197,45 @@ margin-bottom:20px;
 .edudepth{
     border-left:5px solid black;
 }
+/*Experience Section*/
+.timeline{
+    position:relative;
+    padding:20px;
+
+}
+.timeline .timeline-entry {
+    position: relative;
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    border-left:5px solid #e0e0e0;
+    clear: both; 
+}
+.timeline-centered .timeline-entry .timeline-entry-inner {
+    position: relative; 
+    border-left:8px solid;
+}
+.timeline-icon {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: #2c98f0;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 0 0 5px #f2f3f7;
+        line-height: 50px;
+        float: left;
+        transform: translateX(-29px);
+        z-index: 3;
+        align-items: center;
+}
+    .timeline-icon i {
+            color: #fff; 
+    }
+        .timeline-label {
+                position: relative;
+                background: #f2f3f7;
+                padding: 1.5em;
+                margin-left: 60px;
+       }
