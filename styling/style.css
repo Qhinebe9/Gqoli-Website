@@ -3,6 +3,26 @@
     padding:0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Cavier Dreams', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #D9CAB3;
+  }
+  p {
+    text-align: justify;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+}
+.shadow {
+    box-shadow: 0 4px 8px #A8B8A3;
+    transition: box-shadow 0.3s ease-in-out; 
+  }
+
+.shadow:hover {
+    box-shadow: 0 8px 16px #A8B8A3;
+  }
 #container{
     display:flex;
     width:100%;
@@ -25,6 +45,28 @@
     
 
 }
+#nav-section a {
+    color: #D9CAB3;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+    font-weight:bold;
+}
+#nav-section a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 4px; 
+    background-color: #A8B8A3; 
+    transition: width 0.3s ease-in-out; 
+  }
+  
+  /* Hover state - expand the border */
+#nav-section a:hover::after {
+    width: 100%; /* Expand the border to full width */
+  }
 section{
     background-size:cover;
     background-position:center;
@@ -46,7 +88,7 @@ section{
 #home-detail{
     margin-top:20%;
     justify-content: end;
-    color:white;
+    color:#D9CAB3;
 }
 #home-detail p{
     width:25%;
@@ -54,25 +96,27 @@ section{
 }
 button{
     background-color: transparent;
-    color:white;
+    color:#D9CAB3;
     padding:5px 2px 5px 2px;
     margin-top:1%;
-    border-radius: 12px;
-    width:150px;
-    height:50px;
+    border-radius: 15px;
+    width:200px;
+    height:60px;
     cursor:pointer;
-    border-color: white;
+    border-color: #D9CAB3;
     
 }
-button:hover{
-    background-color: aliceblue;
+button::hover{
+    background-color: #F2F2F2;
+
 }
 #about{
     display:flex;
     flex-direction:column;
+    background-color: #F2F2F2;
 }
 #about-me{
-    border-color: black;
+    border-color: #A8B8A3;
 
 }
 
@@ -80,7 +124,7 @@ button:hover{
     text-align: center;
 }
 .underline{
-    border-top: 5px solid black; 
+    border-top: 5px solid #A8B8A3; 
     width:5%;
     margin:1%;
     
@@ -114,14 +158,14 @@ button:hover{
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
-    height:15px;
+    height:20px;
 
 }
 .progress-bar{
     width:0%;
     text-align:center;
     color:white;
-    border-radius:5px 0 0 5px;
+    border-radius:8px 0 0 8px;
     transition: width 2s ease-out;
 }
 .progress-title{
@@ -138,13 +182,15 @@ margin-bottom:20px;
     }
 }
 /*Services section*/
-
+#services{
+    background-color: #F2F2F2;
+}
 .services-col{
     width:25%;
     float:left;
     margin-right:5%;
     margin-bottom:2%;
-    height:200px;
+    height:250px;
     padding:2%;
     border-style: ridge;
     border-radius:5px;
