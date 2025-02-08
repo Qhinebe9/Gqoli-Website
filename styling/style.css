@@ -8,12 +8,13 @@ body {
     font-weight: bold;
     font-size: 15px;
     line-height: 1.8;
-    color: #D9CAB3;
+    color: #1F4E79;
   }
   p {
     text-align: justify;
     word-wrap:break-word;
     overflow-wrap:break-word;
+    color:black;
 }
 .shadow {
     box-shadow: 0 4px 8px #A8B8A3;
@@ -88,7 +89,17 @@ section{
 #home-detail{
     margin-top:20%;
     justify-content: end;
-    color:#D9CAB3;
+    color:black;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 #home-detail p{
     width:25%;
@@ -96,27 +107,27 @@ section{
 }
 button{
     background-color: transparent;
-    color:#D9CAB3;
+    color:#7BAEDC;
     padding:5px 2px 5px 2px;
     margin-top:1%;
     border-radius: 15px;
     width:200px;
     height:60px;
     cursor:pointer;
-    border-color: #D9CAB3;
+    border-color: #7BAEDC;
     
 }
-button::hover{
-    background-color: #F2F2F2;
+button:hover{
+    background-color: #F5F5F5;
 
 }
 #about{
     display:flex;
     flex-direction:column;
-    background-color: #F2F2F2;
+    background-color: #F5F5F5;
 }
 #about-me{
-    border-color: #A8B8A3;
+    border-color: #7BAEDC;
 
 }
 
@@ -124,7 +135,7 @@ button::hover{
     text-align: center;
 }
 .underline{
-    border-top: 5px solid #A8B8A3; 
+    border-top: 5px solid #7BAEDC; 
     width:5%;
     margin:1%;
     
@@ -142,12 +153,60 @@ button::hover{
 #about .about-col{
     align-items: center;
 }
+video{
+    height:100%;
+    width:100%;
+}
+ /* Styling for Video controls */
+ .controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom:5%;
+  }
+
+  /* Play button styling */
+  .video-container {
+    width: 100%;
+    margin: 0 auto;
+    height:100%;
+  }
+  .play-btn {
+    background: none;
+    border: none;
+    color: #3A6A91;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .video-progress {
+    flex-grow: 1;
+    margin: 0 10px;
+    height: 5px;
+    background-color: #3A6A91;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .video-done {
+    height: 100%;
+    background-color: #ff4d4d;
+    width: 0%;
+  }
+
+  /* Volume slider styling */
+  .volume-slider {
+    width: 100px;
+  }
 
 .row{
     display:block;
     float:left;
     padding-top:5%;
-    padding-left:5%;
 }
 /*progress bars*/
 .progress-wrapper {
@@ -182,9 +241,6 @@ margin-bottom:20px;
     }
 }
 /*Services section*/
-#services{
-    background-color: #F2F2F2;
-}
 .services-col{
     width:25%;
     float:left;
@@ -194,6 +250,10 @@ margin-bottom:20px;
     padding:2%;
     border-style: ridge;
     border-radius:5px;
+}
+.services-col:hover{
+    background-color: #F5F5F5;
+
 }
 #services .services-col{
     align-items: center;
@@ -214,6 +274,7 @@ margin-bottom:20px;
 }
 #education{
     justify-content: center;
+    background-color: #F5F5F5;
 }
 #education .col{
     padding-top:5%;
@@ -223,27 +284,30 @@ margin-bottom:20px;
 }
 .educard{
     width:100%;
-    margin-bottom:5%;
-}
-.educard edurow{
-    display:block;
 }
 .edubox{
-    border:5px solid black;
-    padding:3%;
-    height:200px;
-    margin:5%;
+    border:5px solid #2F5D7A;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-right:2%;
+    height:250px;
+    margin-bottom:3%;
 }
 .edudescription{
     float:left;
-    width:50%;
+    width:46%;
     height:100%;
     
 }
 .edudepth{
-    border-left:5px solid black;
+    border-left:5px solid #2F5D7A;
+    padding-left:2%;
+    padding-top:1%;
 }
 /*Experience Section*/
+#experience ul{
+    padding-left:3%;
+}
 .timeline{
     position:relative;
     padding:20px;
@@ -255,7 +319,7 @@ margin-bottom:20px;
     margin-top: 5px;
     margin-left: 30px;
     margin-bottom: 5px;
-    border-left:5px solid #e0e0e0;
+    border-left:5px solid #7BAEDC;
     clear: both; 
 }
 .timeline-centered .timeline-entry .timeline-entry-inner {
@@ -266,10 +330,10 @@ margin-bottom:20px;
         display: block;
         width: 50px;
         height: 50px;
-        background: #2c98f0;
+        background: #F5F5F5;
         border-radius: 50%;
         text-align: center;
-        box-shadow: 0 0 0 5px #f2f3f7;
+        box-shadow: 0 0 0 5px #7BAEDC;
         line-height: 50px;
         float: left;
         transform: translateX(-29px);
@@ -281,7 +345,17 @@ margin-bottom:20px;
     }
         .timeline-label {
                 position: relative;
-                background: #f2f3f7;
+                background: #F5F5F5;
                 padding: 1.5em;
                 margin-left: 60px;
        }
+#contact{
+    background-color:#F5F5F5;
+}   
+#contact .cols{
+    width:50;
+    padding:3%;
+} 
+#contact form{
+    float:clear;
+}

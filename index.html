@@ -1,234 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <title> Lunga Gqoli</title>
-        <link href="https://fonts.googleapis.com/css2?family=Cavier+Dreams&display=swap" rel="stylesheet">
-        <link rel ="stylesheet" href="styling/style.css">
-        <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>  
-    </head>
-    <body>
-            <section id="home">
-                <div id="container">
-                    <div id="nav-section">
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li>Testimonials</li>
-                            <li>contact</li>
-                        </ul>
-                    </div> 
-                <div id="home-detail">
-                    <h3>Hi</h3>
-                    <h1>My name is Lunga Gqoli</h1>
-                    <h2>Accountant</h2>
-                    <p>Lunga Gqoli is a skilled South African accountant with expertise in financial management, auditing, and accounting practices. With a strong background in the field, he is known for his meticulous approach to financial analysis and reporting. Lunga’s commitment to accuracy and efficiency has earned him a solid reputation in the industry, where he works to help businesses optimize their financial operations</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> Lunga Gqoli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cavier+Dreams&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <section id="home">
+        <div id="container">
+            <div id="nav-section">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+            <div id="home-detail">
+                <h3>Hi</h3>
+                <h1>My name is Lunga Gqoli</h1>
+                <h2>Accountant</h2>
+                <p>Lunga Gqoli is a skilled South African accountant with expertise in financial management, auditing,
+                    and accounting practices. With a strong background in the field, he is known for his meticulous
+                    approach to financial analysis and reporting. Lunga’s commitment to accuracy and efficiency has
+                    earned him a solid reputation in the industry, where he works to help businesses optimize their
+                    financial operations</p>
+            </div>
+            <button class="homebtn shadow"> CV</button>
+    </section>
+    <!--About Section-->
+    <section id="about">
+        <h1 class="centered-text">About Me</h1>
+        <div class="centered">
+            <div class="underline centered "></div>
+        </div>
+        <div class="row">
+            <!--First Col in the row-->
+            <div id="first-about-col" class="about-col centered-text" style="margin-top: 0%;">
+                <h2>Certified CA(SA)</h2>
+                <br>
+                <p>I completed my undergraduate degree at the University of the Free State (UFS), where I gained a
+                    strong foundation in accounting, financial management, taxation, and business law.
+                    The program equipped me with the technical skills needed for a successful career in accounting. In
+                    addition to academics, my involvement in student organizations helped me develop leadership,
+                    teamwork, and communication skills, preparing me for the professional world.
+                    My time at UFS not only provided essential knowledge but also contributed to my growth as an
+                    individual and leader.</p>
+            </div>
+            <!--Second Col in the row-->
+            <div class="about-col">
+                <div class="video-container">
+                    <video id="video" src="./img/aboutvid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="controls">
+                        <button id="playPauseBtn" class="play-btn">Play</button>
+                        <div class="video-progress" id="video-progress">
+                            <div class="video-done" id="video-done"></div>
+                        </div>
+                        <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.05"
+                            value="1">
+                    </div>
                 </div>
-                <button class="homebtn shadow"> CV</button>  
-            </section>
-            <!--About Section-->
-            <section id="about">
-                <h1 class="centered-text">About Me</h1>
-                <div class="centered">
-                    <div class="underline centered "></div>
+            </div>
+            <!--Third Col in the row-->
+            <div class="progress-wrapper about-col">
+                <div class="progress-title">Excel
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar1" role="progressbar" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100" style="background-color:#2c98f0"></div>
+                    </div>
                 </div>
-                <div class="row">
-                    <!--First Col in the row-->
-                    <div id="first-about-col" class="about-col centered-text" style="margin-top: 0%;">
-                        <h2 >Certified CA(SA)</h2>
+
+                <!-- Progress Bar 2 -->
+                <div class="progress-title">Power BI
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar2" role="progressbar" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100" style="background-color:#ec5453"></div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar 3 -->
+                <div class="progress-title">Alteryx
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar3" role="progressbar" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100" style="background-color:#f9bf3f"></div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar 4 -->
+                <div class="progress-title">Microsoft Office
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar4" role="progressbar" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100" style="background-color:#a84cb8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <h1 class="centered-text">Services</h1>
+        <div class="centered">
+            <div class="underline centered "></div>
+        </div>
+        <div class="row">
+            <!--First Col in the row-->
+            <div class="services-col centered">
+                <span class="icon2"><i class="fa fa-book" aria-hidden="true"></i></span>
+                <h2>Bookkeeping</h2>
+                <p>Preparation of financial statements, including balance sheets, income statements, and cash flow
+                    statements.</p>
+            </div>
+            <!--Second Col in the row-->
+            <div class="services-col centered">
+                <span class="icon2"><i class="fa fa-calculator" aria-hidden="true"></i></span>
+                <h2>Tax Consulting</h2>
+                <p>Preparing and filing personal and business tax returns.</p>
+            </div>
+            <!--Third Col in the row-->
+            <div class="services-col centered">
+                <span class="icon2"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                <h2>Auditing Services</h2>
+                <p>Conducting internal and external audits to assess the accuracy and reliability of financial
+                    statements.</p>
+            </div>
+            <!--4th Col in the row-->
+            <div class="services-col centered">
+                <span class="icon2"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+                <h2>Financial Planning and Consultancy</h2>
+                <p>Helping individuals and businesses set long-term financial goals and create actionable plans to
+                    achieve them</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="education">
+        <h1 class="centered-text sticky">Education</h1>
+        <div class="centered sticky">
+            <div class="underline centered "></div>
+        </div>
+        <div class="col ">
+            <div class="educard">
+                <div class="centered-text edubox">
+                    <div class="edudescription">
+                        <h2>2016-2019</h2>
                         <br>
-                        <p>I completed my undergraduate degree at the University of the Free State (UFS), where I gained a strong foundation in accounting, financial management, taxation, and business law. 
-                            The program equipped me with the technical skills needed for a successful career in accounting. In addition to academics, my involvement in student organizations helped me develop leadership, teamwork, and communication skills, preparing me for the professional world. 
-                            My time at UFS not only provided essential knowledge but also contributed to my growth as an individual and leader.</p>
+                        <h1>Bachelor of Accounting</h1>
+                        <h3>University of The Free State</h3>
                     </div>
-                    <!--Second Col in the row-->
-                    <div  class="about-col" style="background-image: url('./img/headshot.jpg'); background-size:cover; background-position:center; background-repeat: no-repeat;">
+                    <div class="edudescription edudepth">
+                        <p>The Bachelor of Accounting at UFS gave me a strong foundation in accounting, financial
+                            reporting, and auditing.
+                            It equipped me with the skills to pursue careers in accounting, auditing, taxation, and
+                            financial management, while covering areas like business law and economics.
+                            The program emphasized ethical practices and prepared me for success in the financial
+                            sector.
+                        </p>
                     </div>
-                    <!--Third Col in the row-->
-                    <div class="progress-wrapper about-col">
-                        <div class="progress-title">Excel
-                            <div class="progress-container">
-                                <div class="progress-bar" id="progressBar1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#2c98f0"></div>
-                            </div>
-                        </div>
-                
-                        <!-- Progress Bar 2 -->
-                        <div class="progress-title">Power BI
-                            <div class="progress-container">
-                                <div class="progress-bar" id="progressBar2" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#ec5453"></div>
-                            </div>
-                        </div>
-                
-                        <!-- Progress Bar 3 -->
-                        <div class="progress-title">Alteryx
-                            <div class="progress-container">
-                                <div class="progress-bar" id="progressBar3" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#f9bf3f"></div>
-                            </div>
-                        </div>
-                
-                        <!-- Progress Bar 4 -->
-                        <div class="progress-title">Microsoft Office
-                            <div class="progress-container">
-                                <div class="progress-bar" id="progressBar4" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="background-color:#a84cb8"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </section>
-            <section id="services">
-                <h1 class="centered-text">Services</h1>
-                <div class="centered">
-                    <div class="underline centered "></div>
                 </div>
-                <div class="row">
-                    <!--First Col in the row-->
-                    <div class="services-col centered">
-                        <span class="icon2"><i class="fa fa-book" aria-hidden="true"></i></span>
-                        <h2>Bookkeeping</h2>
-                        <p>Preparation of financial statements, including balance sheets, income statements, and cash flow statements.</p>
+                <div class="centered-text edubox">
+                    <div class="edudescription">
+                        <h2>2022</h2>
+                        <br>
+                        <h1>Bachelor of Commerce Honours in Accounting</h1>
+                        <h3>University of Free State</h3>
                     </div>
-                    <!--Second Col in the row-->
-                    <div  class="services-col centered">
-                        <span class="icon2"><i class="fa fa-calculator" aria-hidden="true"></i></span>
-                        <h2>Tax Consulting</h2>
-                        <p>Preparing and filing personal and business tax returns.</p>
+                    <div class="edudescription edudepth">
+                        <p>The Bachelor of Commerce Honours in Accounting at UFS enhanced my skills in accounting,
+                            financial management, and auditing.
+                            It prepared me for professional roles and leadership positions in the financial sector, with
+                            a focus on research, critical thinking, and ethics.</p>
                     </div>
-                    <!--Third Col in the row-->
-                    <div class="services-col centered">
-                        <span class="icon2"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                        <h2>Auditing Services</h2>
-                        <p>Conducting internal and external audits to assess the accuracy and reliability of financial statements.</p>
+                </div>
+                <div class="centered-text edubox">
+                    <div class="edudescription">
+                        <h2>2021</h2>
+                        <br>
+                        <h1>PGD in Charted Accounting</h1>
+                        <h3>University of Free State</h3>
                     </div>
-                    <!--4th Col in the row-->
-                    <div class="services-col centered">
-                        <span class="icon2"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
-                        <h2>Financial Planning and Consultancy</h2>
-                        <p>Helping individuals and businesses set long-term financial goals and create actionable plans to achieve them</p>
+                    <div class="edudescription edudepth">
+                        <p>The Postgraduate Diploma in Chartered Accounting at UFS equipped me with advanced skills in
+                            auditing, taxation, and financial reporting, preparing me for a career as a Chartered
+                            Accountant and meeting SAICA qualification requirements.
+                        </p>
                     </div>
-                    
-                </div> 
-            </section >
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h1 class="centered-text sticky">Experience</h1>
+        <div class="centered sticky">
+            <div class="underline centered "></div>
+        </div>
+        <div class="timeline  animate__animated" data-key="right">
+            <article class="timeline-entry">
+                <div class="timeline-entry-inner">
+                    <div class="timeline-icon">
+                        <span>2017</span>
+                    </div>
+                    <div class="timeline-label">
+                        <h2>University of the Free State</h2>
+                        <h3>Bloemfontein, South Africa</h3>
+                        <h2>Mentor</h2>
+                        <h3>Responsibilities:</h3>
+                        <ul>
+                            <li>Mentored first-year students, providing academic and personal guidance to support their
+                                transition to university life.</li>
+                            <li>Fostered a supportive environment to encourage student success and engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="timeline-entry">
+                <div class="timeline-entry-inner">
+                    <div class="timeline-icon">
+                        <span>2018</span>
+                    </div>
+                    <div class="timeline-label">
+                        <h2>University of the Free State</h2>
+                        <h3>Bloemfontein, South Africa</h3>
+                        <h2>Beyers Naude Residence Committee Finance Representative</h2>
+                        <h3>Responsibilities:</h3>
+                        <ul>
+                            <li>Managed resident funds and ensured accurate financial oversight.</li>
+                            <li> Developed and monitored budgets for residence activities.</li>
+                            <li>Maintained detailed records of all expenditures.</li>
+                            <li>Coordinated and ensured the maintenance of residence facilities.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="timeline-entry">
+                <div class="timeline-entry-inner">
+                    <div class="timeline-icon">
+                        <span>2020</span>
+                    </div>
+                    <div class="timeline-label">
+                        <h2>University of the Free State</h2>
+                        <h3>Bloemfontein, South Africa</h3>
+                        <h2>Marker</h2>
+                        <h3>Responsibilities:</h3>
+                        <ul>
+                            <li> Marking of 3rd year B. Accounting Taxation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="timeline-entry">
+                <div class="timeline-entry-inner">
+                    <div class="timeline-icon">
+                        <span>2022</span>
+                    </div>
+                    <div class="timeline-label">
+                        <h2>PricewaterhouseCoopers (PwC) Private (SME) </h2>
+                        <h3>Johannesburg, South Africa</h3>
+                        <h2>SAICA Trainee/Senior Associate</h2>
+                        <h3>Responsibilities:</h3>
+                        <ul>
+                            <li>Audit assurance engagement</li>
+                            <li>Review assurance engagement</li>
+                            <li>Project management</li>
+                            <li>Part of the Optimized Core (Committee for accelerated adoption of digital tools like
+                                Alteryx and Power BI)</li>
+                            <li>Mentoring and coaching junior trainees</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="timeline-entry">
+                <div class="timeline-entry-inner">
+                    <div class="timeline-icon">
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="centered-text">Contact Me</h1>
+        <div class="centered">
+            <div class="underline centered "></div>
+        </div>
+        <div class="row">
+            <div class="cols">
+                <form>
+                    <label for="fullName">First Name:</label>
+                    <input type="text" id="fullName" name="fullName"  required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"  required>
+                
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" name="message"  required>
+                
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="cols">
+                
+            </div>
+        
             
+        </div>
+    </section>
 
-            <section id="education" >
-                <h1 class="centered-text sticky">Education</h1>
-                <div class="centered sticky">
-                    <div class="underline centered "></div>
-                </div>
-                <div class="col ">
-                    <div class="educard">
-                        <div class="edurow">
-                            <div  class="centered-text edubox">
-                                <div class="edudescription">
-                                    <h3>2016-2019</h3>
-                                    <br>
-                                    <h2>Bachelor of Accounting</h2>
-                                    <h3>University of The Free State</h3>
-                                </div>
-                                <div class="edudescription edudepth">
-                                    <p>The Bachelor of Accounting at UFS gave me a strong foundation in accounting, financial reporting, and auditing. 
-                                        It equipped me with the skills to pursue careers in accounting, auditing, taxation, and financial management, while covering areas like business law and economics. 
-                                        The program emphasized ethical practices and prepared me for success in the financial sector</p>
-                                </div>
-                            </div>
-                            <div  class="centered-text edubox">
-                                <div class="edudescription">
-                                    <h3>2022</h3>
-                                    <br>
-                                    <h2>Bachelor of Commerce Honours in Accounting</h2>
-                                    <h3>University of Free State</h3>
-                                </div>
-                                <div class="edudescription edudepth">
-                                    <p>The Bachelor of Commerce Honours in Accounting at UFS enhanced my skills in accounting, financial management, and auditing. 
-                                        It prepared me for professional roles and leadership positions in the financial sector, with a focus on research, critical thinking, and ethics.</p>
-                                </div>
-                            </div>
-                            <div  class="centered-text edubox">
-                                <div class="edudescription">
-                                    <h3>2021</h3>
-                                    <br>
-                                    <h2>PGD in Charted Accounting</h2>
-                                    <h3>University of Free State</h3>
-                                </div>
-                                <div class="edudescription edudepth">
-                                    <p>The Postgraduate Diploma in Chartered Accounting at UFS equipped me with advanced skills in auditing, taxation, and financial reporting, preparing me for a career as a Chartered Accountant and meeting SAICA qualification requirements.</p>
-                                </div>
-                            </div>
-                            <div  class="centered-text edubox">
-                                <div class="edudescription">
-                                    <h3>2025-2026</h3>
-                                    <br>
-                                    <h2>University of Free State</h2>
-                                </div>
-                                <div class="edudescription edudepth">
-                                    <p>This undergraduate program is designed to provide students with a solid foundation in accounting principles, financial management, taxation, auditing, and business law. It's often the first step toward becoming a professional accountant.</p>
-                                </div>
-                            </div>
-                            
+    <script src="js/main.js"></script>
+</body>
 
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </section>
-            <section id="experience">
-                <h1 class="centered-text sticky">Experience</h1>
-                <div class="centered sticky">
-                    <div class="underline centered "></div>
-                </div>
-                    <div class="timeline  animate__animated" data-key="right">
-                        <article class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                               <div class="timeline-icon">
-                                <span>2022</span>
-                               </div>
-                               <div class="timeline-label">
-                                  <h3>PricewaterhouseCoopers (PwC) Private (SME) </h2>
-                                  <h4>Johannesburg, South Africa</h3>
-                                  <h3>SAICA Trainee/Senior Associate</h2>
-                                  <h5>Responsibilities:</h5>
-                                  <ul>
-                                    <li>Audit assurance engagement</li>
-                                    <li>Review assurance engagement</li>
-                                    <li>Project management</li>
-                                    <li>Part of the Optimized Core (Committee for accelerated adoption of digital tools like Alteryx and Power BI)</li>
-                                    <li>Mentoring and coaching junior trainees</li>
-                                  </ul>
-                               </div>
-                            </div>
-                         </article>
-                         <article class="timeline-entry animate__animated" data-key="right">
-                            <div class="timeline-entry-inner">
-                               <div class="timeline-icon" style="background-color:red;">
-                                  <span>2024</span>
-                               </div>
-                               <div class="timeline-label">
-                                  <h2>Mentor |<span>2024</span></h2>
-                                  <p>As a mentor on a bursary program, I provided guidance and support to first-year IT students, focusing on both their academic progress and personal well-being. My responsibilities included assisting students with exam preparation, helping them overcome complex coding challenges, and offering advice on managing their university journey. I also created a safe and encouraging space for students to openly discuss any concerns they had about their studies or university life. In addition, I played an advocacy role by offering feedback to the bursary funder whenever a student required additional support or resources to ensure their success in the program. This role strengthened my mentoring, leadership, and communication skills while fostering a sense of community among the students.</p>
-                               </div>
-                            </div>
-                         </article>
-                         <article class="timeline-entry animate__animated" data-key="top">
-                            <div class="timeline-entry-inner">
-                               <div class="timeline-icon" style="background-color:white;">
-                               </div>
-                            </div>
-                         </article>
-                    </div>
-                    
-                </section>
-        
-
-    
-        
-
-        <script src="js/main.js"></script>
-    </body>
-    
 </html>
