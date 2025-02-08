@@ -1,5 +1,7 @@
 # Gqoli-Website
-Primary Color: #D9CAB3 (Light Beige)
-Secondary Color: #A8B8A3 (Soft Sage Green)
-Accent Color: #D6B08C (Warm Sand)
-Neutral: #F2F2F2 (Light Cream)
+Text (Body/Paragraphs): Black (#000000)
+Headings (H1, H2, H3, etc.): Darker Shades of Blue
+H1: Darker Blue (#1F4E79)
+H2: Steel Blue (#3A6A91)
+H3: Medium Dark Blue (#2F5D7A)
+Background: Light Grey (#F5F5F5)
