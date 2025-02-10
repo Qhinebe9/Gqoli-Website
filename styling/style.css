@@ -47,7 +47,7 @@ body {
 
 }
 #nav-section a {
-    color: #D9CAB3;
+    color: #1F4E79;
     text-decoration: none;
     position: relative;
     padding: 10px 0;
@@ -83,7 +83,7 @@ section{
     width:100%;
     /*height:700px;*/
     padding-left: 6%;
-    background-image: url('../img/homebg.jpg');
+    background-color:#F5F5F5;
     padding-top:0;
 }
 #home-detail{
@@ -353,9 +353,48 @@ margin-bottom:20px;
     background-color:#F5F5F5;
 }   
 #contact .cols{
-    width:50;
+    width:50%;
     padding:3%;
+    float:left;
 } 
 #contact form{
-    float:clear;
+    display:flex;
+    flex-direction: column;
+}
+#contact form label{
+    font-size: 20px;
+
+}
+#contact form input{
+    background-color: transparent;
+    border:none;
+    border-bottom:3px solid #2F5D7A;
+    margin-top:3%;
+    margin-bottom:3%;
+    outline:none;
+    font-size: 20px;
+}
+#contact form textarea{
+    background-color: transparent;
+    border:none;
+    border-bottom:3px solid #2F5D7A;
+    margin-top:3%;
+    margin-bottom:3%;
+    outline:none;
+    height:150px;
+}
+#contact #details{
+    display:flex;
+    justify-content: center;
+    padding-top:3%;
+}
+#contact #details ul{
+    list-style-type: none;
+
+}
+#contact #contactdetails ul li{
+    margin:2%;
+}
+#contact #contactdetails .icon2 i{
+    margin-right:2%;
 }
