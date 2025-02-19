@@ -5,7 +5,6 @@
 }
 body {
     font-family: 'Cavier Dreams', sans-serif;
-    font-weight: bold;
     font-size: 15px;
     line-height: 1.8;
     color: #1F4E79;
@@ -15,6 +14,14 @@ body {
     word-wrap:break-word;
     overflow-wrap:break-word;
     color:black;
+}
+.name {
+    top:15px;
+    left:15px;
+    font-size: 15px;
+    line-height: 1.8;
+
+
 }
 .shadow {
     box-shadow: 0 4px 8px #A8B8A3;
