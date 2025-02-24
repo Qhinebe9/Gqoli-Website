@@ -130,6 +130,7 @@ section{
     border-radius:50%;
     width:400px;
     height:400px;
+    border:solid 5px;
 
 }
 button{
@@ -140,12 +141,16 @@ button{
     width:200px;
     height:60px;
     cursor:pointer;
-    border-color: #7BAEDC;
-    font-family: 'Cavier Dreams', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 1.8;
-    color: #1F4E79;
+    color: #F5F5F5;
+}
+.border-left{
+    border-left:3px solid #7BAEDC;
+    
+    width:25%;
+}
+.border-left .icon2 i{
+    font-size:20px;
+    padding:3px;
 }
 button:hover{
     background-color: #F5F5F5;
