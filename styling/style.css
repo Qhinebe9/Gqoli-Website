@@ -145,7 +145,7 @@ button{
 }
 .border-left{
     border-left:3px solid #7BAEDC;
-    
+    height:30px;
     width:25%;
 }
 .border-left .icon2 i{
@@ -239,9 +239,9 @@ video{
   }
 
 .row{
-    display:block;
+    display:flex;
     float:left;
-    padding-top:5%;
+    padding:auto;
     padding-left:auto;
     padding-right:auto;
     margin:5%;
@@ -279,15 +279,21 @@ margin-bottom:20px;
     }
 }
 /*Services section*/
+#services{
+    background-image: URL("../img/servicesbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 .services-col{
-    width:25%;
+    width:30%;
     float:left;
     margin-right:5%;
     margin-bottom:2%;
     height:250px;
     padding:2%;
     border-style: ridge;
-    border-radius:5px;
+    border-radius:15px;
 }
 .services-col:hover{
     background-color: #F5F5F5;
@@ -301,6 +307,7 @@ margin-bottom:20px;
 .icon2 i{
     font-size:30px;
     margin-bottom:15px;
+    margin-top:15px;
 }
 .services-col h2{
     margin-bottom:5px;
@@ -343,6 +350,11 @@ margin-bottom:20px;
     padding-top:1%;
 }
 /*Experience Section*/
+#experience{
+    background-image: url("../img/expbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 #experience ul{
     padding-left:3%;
 }
