@@ -246,6 +246,12 @@ button {
     bottom: 2%;
     z-index: 9;
 }
+@media screen and (max-width: 768px) {
+    .mouse-wrap {
+        bottom: 0px;
+    }
+    
+}
 .mouse-wrap .mouse {
     position: absolute;
     width: 22px;
