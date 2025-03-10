@@ -216,6 +216,7 @@ section {
         align-items: center;
         width: 300px;
         height: 300px;
+        margin-left: 0px;
     }
     #home-detail {
         justify-content: center;
